@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faDatabase, faServer, faCloud, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import './Skills.css';
+import Divider from './Divider';
 
 const skillsList = [
   {
@@ -42,18 +43,6 @@ const skillsList = [
     details: 'In-depth knowledge of building and deploying RESTful APIs and Microservices.'
   },
   {
-    name: 'Cloud Computing',
-    icon: faCloud,
-    color: '#F7DF1E',
-    details: 'Familiarity with deploying scalable and fault-tolerant applications on AWS and GCP.'
-  },
-  {
-    name: 'Mobile App Development',
-    icon: faMobileAlt,
-    color: '#5cb85c',
-    details: 'Experience in building cross-platform mobile apps using React Native and Flutter.'
-  },
-  {
     name: 'Databases',
     icon: faDatabase,
     color: '#00758F',
@@ -69,6 +58,9 @@ const skillsList = [
 
 function Skills() {
   return (
+    <>
+    <h1>My Skills</h1>
+    <Divider />
     <div className="skills-container">
       {skillsList.map(skill => (
         <div className="skill-card" key={skill.name}>
@@ -84,6 +76,7 @@ function Skills() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

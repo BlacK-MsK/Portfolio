@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  background-color: #292929;
+  background-color: #2B2D42;
 }
 
 .skill-card {
@@ -16,14 +16,15 @@
   align-items: center;
   border-radius: 1rem;
   padding: 2rem;
-  background-color: #212121;
+  background: linear-gradient(-45deg, #2C74B3, #205295, #144272,	#FF7F50, #7B2869);
+	background-size: 400% 400%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-0.5rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.5rem) !important;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5) !important;
 }
 
 .skill-icon-container {
@@ -42,6 +43,6 @@
 
 .skill-details {
   font-size: 1.2rem;
-  color: #bdbdbd;
+  color: #fff;
   text-align: center;
 }
